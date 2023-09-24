@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-express-mongodb-typescript-starter-kit",
+  "version": "1.0.0",
+  "description": "A comprehensive starter kit for building robust web applications, powered by Node.js, Express.js, MongoDB, and TypeScript, offering a solid foundation for rapid development.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && env && npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npx nodemon"
+  },
+  "author": "hamidyfine",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "env-var": "^7.4.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.4",
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/morgan": "^1.9.5",
+    "@types/node": "^20.6.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.50.0",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

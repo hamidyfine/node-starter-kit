@@ -1,0 +1,72 @@
+{
+  "name": "node-starter-kit",
+  "description": "",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "author": {
+    "name": "hamidyfine",
+    "email": "hamid.yaftian@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/hamidyfine/node-starter-kit"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development npx nodemon",
+    "build": "rimraf dist && npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0 --fix",
+    "commit": "cz",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@eslint/js": "^9.18.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "@stylistic/eslint-plugin-migrate": "^2.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.4.0",
+    "eslint": "^9.18.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "eslint-plugin-jest": "^28.11.0",
+    "eslint-plugin-jsdoc": "^50.6.1",
+    "eslint-plugin-json": "^4.0.1",
+    "eslint-plugin-no-secrets": "^2.1.1",
+    "eslint-plugin-perfectionist": "^4.4.0",
+    "eslint-plugin-prefer-arrow-functions": "^3.4.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
+    "release-it": "^17.11.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint:scripts"
+    ],
+    "*.{css,scss}": [
+      "npm run lint:styles"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

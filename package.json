@@ -18,7 +18,8 @@
     "start": "npm run build && node dist/index.js",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 --fix",
     "commit": "cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "route-list": "npx route-list src/index.ts -g"
   },
   "dependencies": {
     "axios": "^1.7.9",

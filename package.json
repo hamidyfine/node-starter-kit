@@ -1,6 +1,6 @@
 {
   "name": "node-starter-kit",
-  "description": "",
+  "description": "The Node Starter Kit is a boilerplate for building scalable apps with Node.js, Express, TypeScript, TypeORM (MariaDB), and includes ESLint and CommitLint for code quality.",
   "private": true,
   "version": "1.0.0",
   "license": "MIT",

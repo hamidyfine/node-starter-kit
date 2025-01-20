@@ -135,6 +135,9 @@ importers:
       eslint-plugin-tsdoc:
         specifier: ^0.4.0
         version: 0.4.0
+      eslint-plugin-typeorm-typescript:
+        specifier: ^0.5.0
+        version: 0.5.0(eslint@9.18.0(jiti@2.4.2))
       globals:
         specifier: ^15.14.0
         version: 15.14.0
@@ -1996,6 +1999,9 @@ packages:
 
   eslint-plugin-tsdoc@0.4.0:
     resolution: {integrity: sha512-MT/8b4aKLdDClnS8mP3R/JNjg29i0Oyqd/0ym6NnQf+gfKbJJ4ZcSh2Bs1H0YiUMTBwww5JwXGTWot/RwyJ7aQ==}
+
+  eslint-plugin-typeorm-typescript@0.5.0:
+    resolution: {integrity: sha512-AXS8ymVATNs5LMwGJqOv4PKsxu9SyFjo8SL4i7EmP+JlvBVkjZSIcRdCKlgp5XctQCP7o1ccEgyBvJpVPF4cKw==}
 
   eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -6435,6 +6441,15 @@ snapshots:
     dependencies:
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
+
+  eslint-plugin-typeorm-typescript@0.5.0(eslint@9.18.0(jiti@2.4.2)):
+    dependencies:
+      '@typescript-eslint/parser': 8.20.0(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.20.0(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
+      typescript: 5.7.3
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
 
   eslint-scope@5.1.1:
     dependencies:

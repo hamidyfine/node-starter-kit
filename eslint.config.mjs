@@ -21,6 +21,7 @@ import preferArrowFunction from 'eslint-plugin-prefer-arrow-functions';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import sonarjs from 'eslint-plugin-sonarjs';
 import tsdoc from 'eslint-plugin-tsdoc';
+import typeormTypescriptPlugin from 'eslint-plugin-typeorm-typescript';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -53,6 +54,7 @@ export default [
             'simple-import-sort': simpleImportSort,
             'sonarjs': sonarjs,
             'tsdoc': tsdoc,
+            'typeorm-typescript': typeormTypescriptPlugin,
             'typescript-eslint': tseslint.plugin,
         },
         rules: {
@@ -125,6 +127,9 @@ export default [
             'simple-import-sort/exports': 'warn',
             'simple-import-sort/imports': 'warn',
             'tsdoc/syntax': 'warn',
+            'typeorm-typescript/enforce-column-types': 'error',
+            'typeorm-typescript/enforce-consistent-nullability': ['error', { 'specifyNullable': 'always' }],
+            'typeorm-typescript/enforce-relation-types': 'warn',
             'typescript-eslint/no-non-null-assertion': 'off',
             'typescript-eslint/sort-type-constituents': 'off',
         },
